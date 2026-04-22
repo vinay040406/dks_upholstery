@@ -119,7 +119,7 @@ const PickService = () => {
                 </div>
                 <a
                   href=""
-                  className="flex gap-1 text-green font-semibold leading-160 text-sm sm:text-base items-center z-20"
+                  className="flex gap-1 text-green font-semibold leading-160 text-sm sm:text-base items-center"
                 >
                   Learn More
                   <Icons icon={"learnMoreArrow"} />

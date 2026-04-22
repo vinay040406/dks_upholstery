@@ -31,7 +31,7 @@ const Loved = () => {
       </div>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-full flex gap-8 h-95.25 sm:h-100 relative pb-10"
+        className="max-w-360 w-full flex gap-8 h-95.25 sm:h-100 relative pb-10"
         modules={[Autoplay, Pagination]}
         loop={true}
         slidesPerView={1.2}

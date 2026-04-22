@@ -16,7 +16,7 @@ const Navbar = () => {
   const [hamburgerState, setHamburgerState] = useState(false);
 
   useEffect(() => {
-    setHash("#home");
+    setHash(window.location.hash || "#home");
   }, []);
 
   useEffect(() => {
@@ -78,7 +78,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1, duration: 0.3 }}
                     className={`leading-160 whitespace-nowrap hover:text-green  ${
-                      item.href === pathname ? "text-green" : "text-blacky"
+                      item.href === hash ? "text-green" : "text-blacky"
                     } group`}
                   >
                     <a
