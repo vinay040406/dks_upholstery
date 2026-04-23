@@ -22,7 +22,7 @@ export default function Home() {
       <AboutUs />
       <div
         aria-label="section-bg-image"
-        className="flex flex-col bg-[url('/Images/webp/section.webp')] bg-cover bg-center bg-no-repeat mt-20 sm:mt-30 py-12.5 lg:py-30 gap-20 lg:gap-30"
+        className="flex flex-col bg-[url('/images/webp/section.webp')] bg-cover bg-center bg-no-repeat mt-20 sm:mt-30 py-12.5 lg:py-30 gap-20 lg:gap-30"
       >
         <HowWorks />
         <Faq />
