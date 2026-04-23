@@ -102,7 +102,7 @@ const Footer = () => {
                 ))}
                 {["About Us", "Blog", "FAQs", "Contact"].map((item, index) => (
                   <a
-                    href={`#${item.replaceAll(" ", "-").toLowerCase()}`}
+                    href={`#${item === "FAQs" ? item.slice(0, -1).toLowerCase() : item.replaceAll(" ", "-").toLowerCase()}`}
                     key={index}
                     className="border-l li hover:text-green border-l-blacky/12 pl-2 sm:pl-3.25 text-body-text leading-160 text-sm sm:text-base"
                   >
