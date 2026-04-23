@@ -22,7 +22,7 @@ const RealTransformation = () => {
           <Heading
             text={`Real Transformations, `}
             spanText={"Real Customers"}
-            className={"max-w-full lg:max-w-137.25/106.75"}
+            className={"max-w-full lg:max-w-137.25"}
             spanClassName="text-green leading-120"
           />
           <Paragraph
@@ -36,7 +36,7 @@ const RealTransformation = () => {
           className={`flex justify-between w-full items-center gap-3 sm:gap-6`}
         >
           <span
-            className="hidden sm:flex items-center cursor-pointer rounded-full border border-green justify-center h-10 w-10 sm:h-15 sm:w-15 + shrink-0
+            className="hidden lg:flex items-center cursor-pointer rounded-full border border-green justify-center h-10 w-10 sm:h-15 sm:w-15 + shrink-0
             group duration-300 ease-in hover:bg-green hover:border-transparent"
             onClick={() => swiperRef.current?.slidePrev()}
           >
@@ -57,13 +57,13 @@ const RealTransformation = () => {
           >
             {REAL_TRANSFORMATION_DATA.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-0">
+                <div className="flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-4 xl-gap-0">
                   <Image
                     alt={item.reviewTitle}
                     src={item.image}
                     height={380}
                     width={616}
-                    className="object-cover object-center rounded-2xl  h-56 sm:h-72 lg:h-95 w-full lg:w-auto"
+                    className="object-cover object-center rounded-2xl  h-56 sm:h-72 lg:h-95 w-full lg:w-110 xl:w-154"
                   />
                   <div className="flex flex-col gap-3.75 max-w-full lg:max-w-106.75 w-full">
                     <div className="flex flex-col gap-1.25">
@@ -94,7 +94,7 @@ const RealTransformation = () => {
           </Swiper>
 
           <span
-            className="hidden sm:flex items-center cursor-pointer rounded-full border border-green justify-center h-10 w-10 sm:h-15 sm:w-15 + shrink-0 group duration-300 ease-in hover:bg-green hover:border-transparent"
+            className="hidden lg:flex items-center cursor-pointer rounded-full border border-green justify-center h-10 w-10 sm:h-15 sm:w-15 + shrink-0 group duration-300 ease-in hover:bg-green hover:border-transparent"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <Icons
@@ -107,7 +107,7 @@ const RealTransformation = () => {
           </span>
         </div>
       </div>
-      <div className="flex gap-6 sm:hidden mx-auto mt-10">
+      <div className="flex gap-6 lg:hidden mx-auto mt-10">
         <span
           className="flex items-center cursor-pointer rounded-full border border-green justify-center h-10 w-10 sm:h-15 sm:w-15 + shrink-0
             group duration-300 ease-in hover:bg-green hover:border-transparent"
