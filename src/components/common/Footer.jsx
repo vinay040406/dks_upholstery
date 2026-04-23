@@ -14,8 +14,8 @@ const Footer = () => {
     <div className="w-full bg-cream pt-10 sm:pt-24 lg:pt-32.5">
       <div className="flex flex-col gap-10">
         <div className="max-w-304.25 relative w-full mx-auto flex flex-col lg:flex-row justify-between px-5 xl:px-0 gap-10">
-          <div className="flex flex-col gap-5 lg:border-r border-r-blacky/12 max-w-full lg:max-w-144.25 w-full">
-            <div className="flex flex-col gap-6 sm:gap-8 border-b border-b-blacky/12 pb-8 max-w-full lg:max-w-133.75">
+          <div className="flex flex-col md:flex-row xl:pr-0 md:pr-5 lg:flex-col gap-5 lg:border-r border-r-blacky/12 max-w-full lg:max-w-144.25 w-full">
+            <div className="flex flex-col gap-6  sm:gap-8 border-b border-b-blacky/12 pb-8 max-w-full lg:max-w-133.75">
               <Link href={"/"}>
                 <Image
                   src={"/images/webp/logo.webp"}
@@ -32,9 +32,9 @@ const Footer = () => {
                 className={"max-w-74.5 lg:max-w-113 text-sm sm:text-base"}
               />
             </div>
-            <div className="flex flex-col sm:flex-row gap-5 sm:gap-15">
+            <div className="flex flex-col sm:flex-row gap-5 md:gap-5 lg:gap-15">
               <div className="flex flex-col gap-6.75 max-w-full sm:max-w-58.25">
-                <div className="flex gap-2">
+                <div className="flex gap-2 min-w-58">
                   <Icons icon={"location"} />
                   <Paragraph
                     text={`Defu Industrial Estate Address:  37 Defu Lane 10, #01/41, Singapore 539214`}

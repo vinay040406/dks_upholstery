@@ -60,8 +60,8 @@ const PickService = () => {
               {PICK_SERVICE_DATA.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    className="relative mr-0! rounded-2xl border border-green/20 overflow-hidden p-4 sm:p-5 flex flex-col
-                    hover:shadow-[0px_4px_25px_0px_rgba(1,1,1,0.1)] duration-300 ease-linear justify-between h-72 sm:h-80.25"
+                    className="relative mr-0! rounded-2xl border border-green/20 overflow-hidden p-4 sm:p-3 md:p-5 flex flex-col
+                    hover:shadow-[0px_4px_25px_0px_rgba(1,1,1,0.1)] duration-300 ease-linear justify-between h-72 sm:h-86 md:h-80.25"
                   >
                     <div className="flex flex-col gap-4">
                       <Icons icon={item.svg} />
