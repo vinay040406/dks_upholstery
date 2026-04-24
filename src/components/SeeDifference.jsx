@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { Heading } from "./common/Heading";
 import Paragraph from "./common/Paragraph";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { DIFFERENCE_DATA } from "@/utils/helper";
@@ -46,10 +47,15 @@ const SeeDifference = () => {
               className="max-w-285 w-full mx-auto grid grid-cols-2"
               slidesPerView={2}
               slidesPerGroup={2}
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              loop
               breakpoints={{
                 640: { slidesPerView: 2, slidesPerGroup: 2 },
               }}
-              loop
               onSwiper={(swiper) => (swiperRef.current = swiper)}
             >
               {DIFFERENCE_DATA.map((item, index) => (

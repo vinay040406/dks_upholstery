@@ -5,7 +5,6 @@ import Icons from "./common/Icons";
 
 const NavItem = ({ item, hash }) => {
   const [open, setOpen] = useState(false);
-  console.log(hash);
 
   return (
     <li

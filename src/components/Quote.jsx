@@ -27,7 +27,7 @@ const Quote = () => {
                 />
 
                 <div className="border border-blacky/12 rounded-3xl px-4 py-3 flex items-center gap-2">
-                  <Icons icon={"drop"} className="shrink-0" />
+                  <Icons icon={"drop"} className="shrink-0 cursor-pointer" />
                   <span className="text-xs text-body-text">
                     {item.placeholder}
                   </span>

@@ -9,7 +9,7 @@ import WhatsAppNow from "./common/WhatsAppNow";
 const Hero = () => {
   return (
     <div
-      className="w-full bg-[url('/images/webp/hero-bg-image.webp')] bg-cover flex-col bg-center bg-no-repeat relative min-h-[125] md:min-h-215.25 pt-5 md:pt-15 lg:pt-29 lg:pb-40 flex items-center"
+      className="w-full bg-[url('/images/webp/hero-bg-image.webp')] bg-cover flex-col bg-center bg-no-repeat relative min-h-[125] md:min-h-215.25 pt-15 md:pt-25 lg:pt-29 lg:pb-40 flex items-center"
       id="home"
     >
       <div className="flex flex-col lg:flex-row max-w-285 w-full mx-auto items-center justify-between -translate-y-6 md:-translate-y-12 px-4 xl:px-0 gap-10 lg:gap-0 pt-20  pb-14 lg:py-0">

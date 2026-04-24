@@ -6,7 +6,7 @@ import { SERVICE_DATA } from "@/utils/helper";
 
 const Trusted = () => {
   return (
-    <div className="flex flex-col w-full gap-12 sm:gap-20 mt-24 sm:mt-36 lg:mt-50 items-center px-5 xl:px-0">
+    <div className="flex flex-col w-full gap-12 sm:gap-20 mt-16 sm:mt-36 lg:mt-50 items-center px-5 xl:px-0">
       <div className="flex flex-col gap-8 items-center w-full">
         <h2 className="text-xl font-semibold leading-160 text-gray italic">
           Trusted Our Service

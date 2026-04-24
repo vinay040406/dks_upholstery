@@ -97,3 +97,6 @@
   border-radius: 10px;
   background: var(--color-green);
 }
+.swiper-pagination-bullet {
+  background-color: var(--color-green) !important;
+}

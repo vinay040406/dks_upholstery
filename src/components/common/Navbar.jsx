@@ -4,7 +4,6 @@ import Link from "next/link";
 import Button from "./Button";
 import { NAV_LINKS } from "@/utils/helper";
 import Icons from "./Icons";
-
 import { useEffect, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
@@ -82,7 +81,7 @@ const Navbar = () => {
                     } group`}
                   >
                     <a
-                      href={`#${item.href}`}
+                      href={`${item.href}`}
                       onClick={() => setHamburgerState(false)}
                       className={`${
                         item.link === "Services"
@@ -154,13 +153,16 @@ const Navbar = () => {
             }}
             animate={{ x: hamburgerState && 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="block lg:hidden text-2xl z-50"
+            className="block lg:hidden text-2xl z-50 cursor-pointer"
             onClick={handleHamburger}
           >
             <RxCross1 />
           </motion.span>
         ) : (
-          <span className="block lg:hidden z-50" onClick={handleHamburger}>
+          <span
+            className="block lg:hidden z-50 cursor-pointer"
+            onClick={handleHamburger}
+          >
             <Icons icon={"hamburger"} />
           </span>
         )}

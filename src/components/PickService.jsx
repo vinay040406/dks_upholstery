@@ -46,7 +46,7 @@ const PickService = () => {
               />
             </span>
             <Swiper
-              className="max-w-285 w-full mx-auto grid grid-cols-2 "
+              className="max-w-285 w-full mx-auto grid grid-cols-2 pb-5!"
               slidesPerView={1}
               slidesPerGroup={1}
               spaceBetween={16}
@@ -130,7 +130,7 @@ const PickService = () => {
         </div>
         <Button
           text={"View All Services"}
-          className={"px-7 py-3 mt-7.5 w-fit"}
+          className={"px-7 py-3 mt-2.5 w-fit"}
           variant="primary"
         />
       </div>
